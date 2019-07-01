@@ -1,0 +1,323 @@
+* {
+    font-family: 'Palatino','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    background: rgb(29,227,83);
+    background: radial-gradient(circle, rgba(29,227,83,1) 0%, rgba(61,68,78,1) 100%);    height: 1000px;
+    border: 8px solid #E7E393;
+    padding: 0px;
+    height: auto;
+    min-height: 1500px;
+}
+
+.form-group{
+    display: inline-block;
+    width: 88.5%;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.form-control{
+    display: block;
+}
+.form-group label{
+    margin: 1%;
+    font-weight: bold;
+}
+.form-group h2{
+    font-weight: bolder;
+    color: #E7E393;
+    text-decoration-line: underline;
+}
+
+.register-column{
+    height: auto;
+    width: 380px;
+    display: inline-block;
+    margin: 2% 14% 2% 6%;
+    border: 4px solid #E7E393;
+    padding: 10px;
+    color: #E7E393;
+}
+.register-column button {
+    display: block;
+    background-color: #E7E393;
+    color: steelblue;
+    font-weight: bolder;
+    margin: 2% 1% 0% 64.5%;
+
+}
+.register-column h2{
+    text-align: center;
+    text-decoration-line: underline
+}
+
+.login-column{
+    height: auto;
+    width: 380px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2% 0% 0% 6%;
+    border: 4px solid #E7E393;
+    padding: 10px;
+    color: #E7E393;
+}
+
+.login-column button {
+    display: block;
+    background-color: #E7E393;
+    color: steelblue;
+    font-weight: bolder;
+    margin: 2% 1% 0% 69.5%;
+}
+.login-column h2{
+    text-align: center;
+    text-decoration-line: underline
+}
+
+.success-message {
+    display: block;
+    margin: auto;
+    padding: 2% 0% 0% 2%;
+}
+.success-message h2{
+    text-align: center;
+    color: #E7E393;
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+a{
+    font-size: 19px;
+}
+
+.messages{
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+    text-align: center;
+    color: red;
+    border: 4px solid red;
+}
+.messages h5{
+    text-decoration: underline solid red;
+    font-size: 25px;
+}
+
+.page_header{
+    width:100%;
+    height:75px;
+    border-bottom:5px solid #E7E393;
+    margin: auto;
+    display: inline-block;
+    color: #E7E393;
+    background: rgb(29,227,83);
+    background: radial-gradient(circle, rgba(29,227,83,1) 0%, rgba(61,68,78,1) 100%);
+  }
+  
+.page_header h1{
+    text-align: left;
+    display: inline-block;
+    margin: 10px 0px 0px 10px;
+    color: #E7E393;
+  }
+.page_header h5{
+    text-align: left;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    color: #E7E393;
+    font-size: 17px;
+  }
+.page_header h6{
+    text-align: left;
+    display: inline-block;
+    color: #E7E393;
+    font-size: 15px;
+  }
+
+.page_header h4{
+    text-align: right;
+    display: inline-block;
+    color: #E7E393;
+    margin: 0% 3% 5% 32%;
+    font-size: 22px;
+
+  }
+
+.page_header a{
+    text-align: right;
+    float: right;
+    margin: 2% 2% 5% -1%;
+    font-size: 20px;
+    color: #FCFCFC;
+    padding: .1%;
+    border: 2px solid #E7E393;
+    }
+.page_header form{
+  text-align: right;
+  display: inline-block;
+  margin: 0px 15px 0px 550px;
+  }
+.wall_box {
+    margin: 2% 0% 2% 1.25%;
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+.wall_box h3{
+    color: #E7E393;
+    text-decoration-line: underline;
+}
+.library_box {
+    margin: 2% 0% 2% 2%;
+    width: 50%;
+    height: auto;
+    border: 5px solid #E7E393;
+    display: inline-block;
+    color: #FCFCFC;
+    vertical-align: top;
+    padding: 1%;
+    font-size: 16.5px;
+}
+.library_box h5{
+    color: #E7E393;
+}
+.library_box a{
+    color: #FCFCFC;
+    border: 2px solid #E7E393;
+    padding: .5%;
+    font-size: 17px;
+}
+.library_box h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #E7E393;
+    text-decoration-line: underline;
+}
+.library_box h6{
+    color: #FCFCFC;
+    display: inline-block;
+    font-size: 17px;
+}
+.message_box{
+    margin:auto;
+    height: 30%;
+    padding: 1%;
+    border: 5px solid #E7E393;
+}
+.message_box h2{
+    text-align: center;
+}
+.message_box button {
+    display: block;
+    background-color: #E7E393;
+    color: steelblue;
+    font-weight: bolder;
+    border: #E7E393;
+    margin: 1.5% 1% 0% 82.5%;
+
+}
+.message_box label{
+color: #E7E393;
+font-size: 25px;
+margin: auto;
+margin-top: 1%;
+
+}
+.message_box textarea{
+    height: 100px;
+    margin: 1% 0% 0% 0%;
+}
+.hidden_box{
+    color: #E7E393;
+}
+.hidden_box h3{
+    text-decoration-line: underline;
+}
+.hidden_box button {
+    display: inline-block;
+    background-color: #E7E393;
+    color: steelblue;
+    font-weight: bolder;
+    border: #E7E393;
+    margin: 0% 0% 2% 5%;
+}
+fieldset a{
+    color:#E7E393;
+    border: 1px solid #E7E393;
+    padding: .1%;
+}
+.quote_box{
+    border: 2px solid #E7E393;
+    padding: 1%;
+    margin: 2% 1% 1% 1%;
+}
+.profile_box{
+    color: #E7E393;
+    border: 5px solid #E7E393;
+    padding: 1%;
+    margin: 1%;
+}
+.profile_box h2 {
+    text-align: center;
+    margin-top: 2%;
+    text-decoration-line: underline;
+    font-size: 45px;
+}
+.profile_box h4 {
+    text-align: center;
+    margin-top: 1%;
+    color: #FCFCFC;
+}
+.profile_box a {
+    color:#FCFCFC;
+    border: 1.5px solid #E7E393;
+    font-size: 17px;
+    padding: .4%;
+}
+
+.profile_box_quote{
+    padding: 1%;
+    margin: 1%;
+}
+
+.fav_box{
+    margin:auto;
+    height: 30%;
+    padding: 1%;
+    border: 5px solid #E7E393;
+    color: #FCFCFC;
+}
+
+.fav_box h3{
+    color: #E7E393;
+    text-decoration-line: underline;
+}
+.fav_box h5{
+    color: #E7E393;
+}
+.fav_box a{
+    color: #FCFCFC;
+    border: 2px solid #E7E393;
+    padding: .5%;
+    font-size: 17px;
+}
+.fav_box h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #E7E393;
+    text-decoration-line: underline;
+}
+.fav_box h6{
+    color: #FCFCFC;
+    display: inline-block;
+}
+
+.fav_quote_box {
+    border: .5px solid #E7E393;
+    padding: 1%;
+    margin: 1%;
+    width: auto;
+}

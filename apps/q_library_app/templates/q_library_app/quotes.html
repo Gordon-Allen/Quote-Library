@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'q_library_app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'q_library_app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'q_library_app/css/libs/font-awesome/css/font-awesome.min.css' %} ">
+    <title>Quote Library: A Community of Literary Excellence</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page_header">
+            <h1><strong><i class="fa fa-pencil" aria-hidden="true"></i>Quote Library</strong></h1>
+            <a href="/log_out">Log Out</a> <a href='/users/{{current_user.id}}'>{{current_user.first_name}}'s Profile</a> <a href="/quotes">Dashboard</a>
+        </div>
+        <div class="wall_box">
+            <div class="message_box">
+                <form action='/add_quote' method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <h2>Contribute a Quote</h2>
+                        <label for="exampleFormControlInput1">Author:</label>
+                        <input type="text" class="form-control" name="quoted_by" label="Quoted By"> 
+                        <label for="exampleFormControlInput1">Quote:</label>
+                        <textarea  class="form-control" name="message" label="Message"></textarea>
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </form>
+            {% if messages %}
+            <h5>Error(s)</h5>
+                {% for message in messages %}
+                <p {% if messages.tags %} class="{{ message.tags }}"{% endif %}> <strong>{{message}}</strong></p>
+                {% endfor %}
+            {% endif %}
+            </div>
+            <br>
+            <div class="fav_box">
+                <h2> Your Favorites Quotes</h2>
+                    {% for quote in favorites %}
+                    <div class="fav_quote_box">
+                        <h5><strong>Original Author: <h6><em>{{quote.quoted_by}}</em></h6></strong></h5>
+                        <h5><strong>Quote:</strong></h5>
+                            <ul>
+                                <li>
+                                    <em>"{{quote.message}}"</em>
+                                </li>
+                            </ul>
+                        <h5><strong>Posted By: <a href='/users/{{quote.author.id}}'>{{quote.author.first_name}} {{quote.author.last_name}}</a> -- <a href="/remove/{{quote.id}}">Remove</a></strong></h5>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="library_box">
+                <h2> Community Library</h2>
+                    {% for quote in all_quotes %}
+                    <div class="quote_box">
+                        <fieldset>
+                            <h5><strong>Original Author: <h6><em>{{quote.quoted_by}}</em></h6></strong></h5>
+                            <h5><strong>Quote:</strong></h5>
+                            <ul>
+                                <li>
+                                    <em>"{{quote.message}}"</em>
+                                </li>
+                            </ul>
+                            <h5><strong>Posted By: <a href='/users/{{quote.author.id}}'>{{quote.author.first_name}} {{quote.author.last_name}}</a>  --  <a href="/quote/{{quote.id}}">Add To Favorites</a></strong></h5>
+                        </p>
+                        </fieldset>
+                    </div>
+                    {% endfor %}
+        </div>
+
+        </div>
+</body>
+</html>
