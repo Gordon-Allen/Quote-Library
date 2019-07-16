@@ -1,7 +1,6 @@
 * {
     font-family: 'Palatino','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 .container{
     background: rgb(29,227,83);
     background: radial-gradient(circle, rgba(29,227,83,1) 0%, rgba(61,68,78,1) 100%);    height: 1000px;
@@ -10,7 +9,6 @@
     height: auto;
     min-height: 1500px;
 }
-
 .form-group{
     display: inline-block;
     width: 88.5%;
@@ -30,7 +28,6 @@
     color: #E7E393;
     text-decoration-line: underline;
 }
-
 .register-column{
     height: auto;
     width: 380px;
@@ -52,7 +49,6 @@
     text-align: center;
     text-decoration-line: underline
 }
-
 .login-column{
     height: auto;
     width: 380px;
@@ -63,7 +59,6 @@
     padding: 10px;
     color: #E7E393;
 }
-
 .login-column button {
     display: block;
     background-color: #E7E393;
@@ -75,7 +70,6 @@
     text-align: center;
     text-decoration-line: underline
 }
-
 .success-message {
     display: block;
     margin: auto;
@@ -87,11 +81,9 @@
     text-decoration-line: underline;
     font-weight: bolder;
 }
-
 a{
     font-size: 19px;
 }
-
 .messages{
     margin: auto;
     width: 60%;
@@ -104,7 +96,6 @@ a{
     text-decoration: underline solid red;
     font-size: 25px;
 }
-
 .page_header{
     width:100%;
     height:75px;
@@ -224,7 +215,6 @@ color: #E7E393;
 font-size: 25px;
 margin: auto;
 margin-top: 1%;
-
 }
 .message_box textarea{
     height: 100px;
@@ -277,12 +267,10 @@ fieldset a{
     font-size: 17px;
     padding: .4%;
 }
-
 .profile_box_quote{
     padding: 1%;
     margin: 1%;
 }
-
 .fav_box{
     margin:auto;
     height: 30%;
@@ -290,7 +278,6 @@ fieldset a{
     border: 5px solid #E7E393;
     color: #FCFCFC;
 }
-
 .fav_box h3{
     color: #E7E393;
     text-decoration-line: underline;
@@ -314,7 +301,6 @@ fieldset a{
     color: #FCFCFC;
     display: inline-block;
 }
-
 .fav_quote_box {
     border: .5px solid #E7E393;
     padding: 1%;

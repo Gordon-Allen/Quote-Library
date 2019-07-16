@@ -20,7 +20,6 @@ class UserManager(models.Manager):
             errors["confirm_password"] = "Passwords do not match"
         if len(postData['date_of_birth']) < 4:
             errors["date_of_birth"] = "Date of Birth required"
-
         return errors
 
     def login_validator(self, postData):
@@ -69,4 +68,3 @@ class Quote(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = QuoteManager() 
-

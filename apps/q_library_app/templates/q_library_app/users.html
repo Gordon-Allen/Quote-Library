@@ -18,18 +18,17 @@
             <a href="/log_out">Log Out</a> <a href='/users/{{current_user.id}}'>{{current_user.first_name}}'s Profile</a> <a href="/quotes">Dashboard</a>
         </div>
         <div class="profile_box">
-        <h2>{{author.first_name}} {{author.last_name}}'s Profile</h2>
-        <h4><em>Quotes Contributed: {{quotes.all.count}}</em></h4>
-        <ol>
-        {% for quote in quotes %}
-            <li class="profile_box_quote"><strong style="color: #FCFCFC; font-size: 17.5px;">{{quote.quoted_by}}</strong>
-                <ul>
-                    <li>
-                        <strong style="font-size: 17px;">Quote:</strong>
+            <h2>{{author.first_name}} {{author.last_name}}'s Profile</h2>
+            <h4><em>Quotes Contributed: {{quotes.all.count}}</em></h4>
+            <ol>
+                {% for quote in quotes %}
+                <li class="profile_box_quote"><strong style="color: #FCFCFC; font-size: 17.5px;">{{quote.quoted_by}}</strong>
+                    <ul>
+                        <li>
+                            <strong style="font-size: 17px;">Quote:</strong>
                             <ul>
                                 <li>
-                                    <em style="color: #FCFCFC; font-size: 16.5px;
-                                    ">"{{quote.message}}"</em>
+                                    <em style="color: #FCFCFC; font-size: 16.5px;">"{{quote.message}}"</em>
                                     <ul>
                                         <li>
                                             <a href="/quote/{{quote.id}}">Add To Favorites</a>
@@ -37,12 +36,12 @@
                                     </ul>
                                 </li>
                             </ul>
-                    </li>
-                </ul>
-            </li>
-        {% endfor %}
-        </ol>
-    </div>
+                        </li>
+                    </ul>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 </body>
 </html>
